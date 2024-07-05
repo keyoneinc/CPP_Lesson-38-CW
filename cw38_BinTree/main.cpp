@@ -16,4 +16,21 @@ int main() {
 
 	cout << endl;
 
+	auto res1 = bin.search(11);
+	if (res1 == nullptr) {
+		cout << 11 << "Not found\n";
+	}
+	else {
+		res1->showNode();
+	}
+
+	auto res2 = bin.search(-11);
+	if (res2 == nullptr) {
+		cout << -11 << "Not found\n";
+	}
+	else {
+		res1->showNode();
+	}
+
+
 }

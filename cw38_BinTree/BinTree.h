@@ -62,7 +62,7 @@ namespace BinTree {
 			}
 		}
 
-		Node<U> search(U value) {
+		Node<U>* search(U value) {
 			//Знайти адресу вузла з заданним значенням value
 			//Якщо такого вузла немає, то повернути nullptr
 
@@ -72,7 +72,7 @@ namespace BinTree {
 
 				p = (value < p->info) ? p->left : p->right;
 			}
-			retun nullptr;
+			return nullptr;
 		}
 
 	};
