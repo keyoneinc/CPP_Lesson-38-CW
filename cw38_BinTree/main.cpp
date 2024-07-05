@@ -32,5 +32,7 @@ int main() {
 		res1->showNode();
 	}
 
+	bin.showTree();
+
 
 }
