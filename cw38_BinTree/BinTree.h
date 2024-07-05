@@ -61,7 +61,24 @@ namespace BinTree {
 					place->right = el;
 			}
 		}
+
+		Node<U> search(U value) {
+			//Знайти адресу вузла з заданним значенням value
+			//Якщо такого вузла немає, то повернути nullptr
+
+			Node<U>* p = root;
+			while (p != nullptr) {
+				if (p->info == value) return p;
+
+				p = (value < p->info) ? p->left : p->right;
+			}
+			retun nullptr;
+		}
+
 	};
+
+
+
 
 
 }
